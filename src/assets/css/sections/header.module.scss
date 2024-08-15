@@ -1,0 +1,23 @@
+.logo {
+  margin: auto 0;
+}
+.navigation {
+  max-width: 488px;
+  width: 100%;
+  margin: auto 0;
+  @media (max-width: 768px) {
+    width: fit-content;
+    >div {
+      >div:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}
+.headerButton {
+  width: 170px;
+  height: 40px;
+  @media (max-width: 950px) {
+    display: none;
+  }
+}

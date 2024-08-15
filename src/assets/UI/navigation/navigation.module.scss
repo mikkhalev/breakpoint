@@ -1,0 +1,19 @@
+@import "app";
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.navigation a {
+  color: $black;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
