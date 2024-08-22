@@ -1,4 +1,4 @@
-@import "app";
+@import "../app";
 
 .section {
   height: 100vh;
@@ -11,45 +11,60 @@
   max-width: 1000px;
   @media (max-width: 768px) {
     gap: 5px;
+    justify-content: center;
+  }
+  .button {
+    height: 50px;
+    width: fit-content;
+    @media (max-width: 768px) {
+      height: 35px;
+    }
   }
 }
-.button {
-  height: 50px;
-  width: fit-content;
-  @media (max-width: 768px) {
-    height: 40px;
-  }
-}
+
 .infoBoxRow {
   width: 100%;
   max-width: 650px;
   flex-wrap: wrap;
   margin-top: 37px;
   gap: 20px;
+  .infoBox {
+    display: flex;
+    flex-direction: row;
+    span:nth-child(1) {
+      color: $greyText;
+      font-family: Onest, sans-serif;
+      @include fontSize(40, 22);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    span:nth-child(2) {
+      color: $grey;
+      font-family: Onest, sans-serif;
+      @include fontSize(14, 12);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: inline-block;
+      max-width: 143px;
+      height: fit-content;
+      margin: auto 0;
+    }
+  }
 }
-.infoBox {
+
+.borders {
   display: flex;
   flex-direction: row;
-  span:nth-child(1) {
-    color: $greyText;
-    font-family: Onest, sans-serif;
-    @include fontSize(40, 22);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: inline-block;
-    margin-right: 20px;
+  border-bottom: 1px solid $borderColor;
+  div {
+    width: 33.333%;
+    border-right: 1px solid $borderColor;
   }
-  span:nth-child(2) {
-    color: $grey;
-    font-family: Onest, sans-serif;
-    @include fontSize(14, 12);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: inline-block;
-    max-width: 143px;
-    height: fit-content;
-    margin: auto 0;
+  >div:nth-child(3) {
+    border-right: unset;
   }
 }

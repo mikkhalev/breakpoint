@@ -1,0 +1,93 @@
+@import "../app.scss";
+
+
+.categoriesScreen {
+  position: relative;
+}
+
+.titleRow {
+  margin-top: 101px;
+  span {
+    white-space: nowrap;
+  }
+  :nth-child(2) {
+    @media(max-width: 1180px) {
+      display: block;
+    }
+    @media(max-width: 1119px) {
+      display: inline;
+    }
+    @media(max-width: 768px) {
+      white-space: unset;
+    }
+  }
+  :nth-child(3) {
+    display: block;
+    margin-left: 70px;
+    @media(max-width: 1180px) {
+      margin-left: 0;
+    }
+    @media(max-width: 1119px) {
+      margin-left: 70px;
+    }
+    @media(max-width: 768px) {
+      margin-left: 0;
+      white-space: unset;
+      display: inline;
+    }
+  }
+  @media(max-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.categories {
+  margin-top: 50px;
+  justify-content: space-between;
+  >div:nth-child(1) {
+    margin: 21px 0 0 0;
+    @media (max-width: 1024px) {
+      margin: 0 0 0 0;
+    }
+  }
+  >div:nth-child(2) {
+    margin: 0 0 0 -43px;
+    @media (max-width: 1024px) {
+      margin: 0 0 0 -1px;
+    }
+    @media(max-width: 768px) {
+      margin: 0;
+    }
+  }
+  >div:nth-child(3) {
+    margin: 21px 0 0 -43px;
+    @media (max-width: 1024px) {
+      margin: 0 0 0 -1px;
+      width: calc(33.33% + 2px);
+    }
+    @media(max-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  @media(max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+.borders {
+  display: flex;
+  flex-direction: row;
+  div {
+    width: 33.333%;
+    border-right: 1px solid $borderColor;
+  }
+  >div:nth-child(3) {
+    border-right: unset;
+  }
+  @media (max-width: 768px) {
+    border: unset;
+  }
+}

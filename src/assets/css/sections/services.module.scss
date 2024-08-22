@@ -1,49 +1,26 @@
-@import "app";
+@import "../app";
 
 .title > span:nth-child(2) {
   text-align: right;
   white-space: nowrap;
 }
-.services {
-  flex-wrap: wrap;
-  margin: 50px auto 0 auto;
-  >a {
-    margin-left: -1px;
-  }
-  >a:nth-child(1) {
-    margin-left: 0px;
-  }
-}
-.titleMob {
-  display: none;
-}
-@media (max-width: 1220px) {
-  .titleRow {
+.titleRow {
+  margin-top: 101px;
+  @media (max-width: 1220px) {
     display: block;
     >div {
       display: inline-flex;
     }
   }
-}
-@media (max-width: 1119px) {
-  .titleRow {
+  @media (max-width: 1119px) {
     display: flex;
     >div {
       display: flex;
     }
   }
-}
-@media(max-width: 950px) {
-  .services {
-    gap: 10px 2%;
-    >a {
-      margin-left: 0px;
-    }
-  }
-}
-@media (max-width: 768px) {
-  .titleRow {
+  @media (max-width: 768px) {
     display: block;
+    margin-top: 50px;
     >div {
       display: inline;
       >span{
@@ -54,7 +31,32 @@
       }
     }
   }
-  .services {
+}
+.services {
+  flex-wrap: wrap;
+  margin: 50px auto 0 auto;
+  >a {
+    margin-left: -1px;
+  }
+  >a:nth-child(1) {
+    margin-left: 0;
+  }
+  @media(max-width: 950px) {
+    gap: 10px 2%;
+    >a {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 768px) {
     margin: 30px auto 0 auto;
   }
+}
+.titleMob {
+  display: none;
+}
+
+.borders {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $borderColor;
 }

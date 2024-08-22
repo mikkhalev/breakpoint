@@ -1,0 +1,47 @@
+@import '../../css/app';
+
+.input[type="text"], .input[type="tel"] {
+  padding: 0 25px;
+  line-height: 64px;
+  color: $white;
+  font-family: Onest, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: left;
+  border: 1px solid rgb(95, 95, 95);
+  border-radius: 100px;
+  outline: none;
+  background: unset;
+  width: 100%;
+  ::placeholder {
+    color: rgb(95, 95, 95);
+  }
+  @media (max-width: 768px) {
+    line-height: 43px;
+    font-size: 14px;
+  }
+}
+.input[type="submit"] {
+  border-radius: 100px;
+  background: $white;
+  line-height: 64px;
+  color: $black;
+  font-family: Onest, sans-serif;
+  border: 1px solid $white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  min-width: 240px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: unset;
+    color: $white;
+  }
+  @media (max-width: 768px) {
+    line-height: 42px;
+    font-size: 14px;
+  }
+}

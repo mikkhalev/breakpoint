@@ -1,13 +1,22 @@
-@import 'app';
+@import '../../css/app';
 
 .logo {
   color: $black;
-  font-family: Onest;
-  font-size: 21.198px;
+  font-family: Onest, sans-serif;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.742px;
   text-transform: lowercase;
-  margin: auto;
+  margin: auto 0;
+  display: block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.logo:hover {
+  color: $blackHover;
+}
+.white {
+  color: $footerText;
 }

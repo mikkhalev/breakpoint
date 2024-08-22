@@ -1,8 +1,8 @@
 import React from 'react';
-import MainPageTitleScreen from "../sections/main-page-title-screen";
-import Services from "../sections/services";
-import Advantages from "../sections/advantages";
-import Steps from "../sections/steps";
+import MainPageTitleScreen from "../components/sections/main-page-title-screen";
+import Services from "../components/sections/services";
+import Advantages from "../components/sections/advantages";
+import Steps from "../components/sections/steps";
 
 const MainPage = () => {
     return (

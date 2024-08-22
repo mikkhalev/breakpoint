@@ -1,11 +1,20 @@
 import React from 'react';
-import '../css/app.scss';
-import Header from "./header";
+import './assets/css/app.scss';
+import './assets/css/general.scss';
+import Header from "./assets/components/sections/header";
+import Footer from "./assets/components/sections/footer";
+import MainPage from "./assets/pages/main-page";
+import AppRouter from "./assets/router/app-router";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+        <BrowserRouter>
+            <Header/>
+            <AppRouter/>
+            <Footer/>
+        </BrowserRouter>
     </div>
   );
 }

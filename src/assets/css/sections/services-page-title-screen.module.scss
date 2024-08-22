@@ -1,0 +1,116 @@
+@import "../app";
+
+.titleScreen {
+  height: 100vh;
+  display: flex;
+  .title {
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+
+    h1 {
+      color: $black;
+      font-family: Unbounded, sans-serif;
+      @include fontSize(86, 32);
+      font-weight: 300;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: left;
+      text-transform: uppercase;
+      white-space: pre-wrap;
+      z-index: 1;
+      @media (max-width: 990px) {
+        text-align: center;
+        line-height: 130%;
+      }
+    }
+    >a {
+      display: block;
+      height: 54px;
+      width: 100%;
+      max-width: 264px;
+      background: $black;
+      color: $white;
+      font-family: Onest, sans-serif;
+      @include fontSize(18, 12);
+      font-weight: 600;
+      line-height: 54px;
+      letter-spacing: 0;
+      border-radius: 100px;
+      text-align: center;
+      text-transform: lowercase;
+      margin-top: 30px;
+      transition: 0.3s;
+      border: 1px solid $black;
+      &:hover {
+        color: $black;
+        background: unset;
+      }
+      @media (max-width: 990px) {
+        margin: 20px auto 0 auto;
+        height: 34px;
+        line-height: 34px;
+        width: 156px;
+      }
+    }
+    .icon {
+      position: absolute;
+      bottom: 0;
+      right: -4.1%;
+      z-index: 0;
+      @media (max-width: 990px) {
+        position: unset;
+        margin: 30px auto 0 auto;
+        max-width: 246px;
+      }
+    }
+    .vector1 {
+      width: 659px;
+      height: 659px;
+      position: absolute;
+      bottom: -180px;
+      left: -240px;
+      transform: rotateZ(180deg);
+      z-index: -90;
+      @media (max-width: 990px) {
+        display: none;
+      }
+    }
+    .vector2 {
+      width: 483px;
+      height: 483px;
+      position: absolute;
+      top: -360px;
+      left: -230px;
+      transform: rotateZ(0deg);
+      z-index: -90;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .vector3 {
+      width: 432px;
+      height: 432px;
+      position: absolute;
+      top: -150px;
+      right: -220px;
+      transform: rotateZ(-45deg);
+      z-index: -90;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+.borders {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $borderColor;
+  div {
+    width: 33.333%;
+    border-right: 1px solid $borderColor;
+  }
+  >div:nth-child(3) {
+    border-right: unset;
+  }
+}

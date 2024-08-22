@@ -1,0 +1,164 @@
+@import "../app";
+
+.title {
+  color: $footerText;
+  font-family: Unbounded, sans-serif;
+  @include fontSize(86, 40);
+  font-weight: 300;
+  line-height: 98.52%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  @media(max-width: 768px) {
+    text-align: center;
+    line-height: 105%;
+  }
+}
+.contacts {
+  gap: 32px;
+  margin-top: 111px;
+  .links {
+    gap: 15px;
+    a {
+      color: $footerText;
+      font-family: Onest, sans-serif;
+      font-weight: 300;
+      line-height: 98.52%;
+      letter-spacing: 0;
+      text-align: left;
+      width: fit-content;
+      display: block;
+      @media (max-width: 768px) {
+        margin: 0 auto;
+      }
+    }
+    >a:nth-child(1) {
+      @include fontSize(36, 14);
+    }
+    >a:nth-child(2) {
+      @include fontSize(34, 14);
+    }
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+}
+.socials {
+  gap: 10px;
+  margin-left: auto;
+  a {
+    border: 1px solid $footerText;
+    border-radius: 100px;
+    padding: 8px 19px;
+    color: $footerText;
+    font-family: Onest, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: unset;
+    transition: 0.3s;
+    &:hover {
+      color: $white;
+    }
+    @media (max-width: 768px) {
+      font-size: 10px;
+      padding: 3px 8px;
+    }
+  }
+  .whatsapp {
+    &:hover {
+      background: #25d366;
+    }
+  }
+  .telegram {
+    &:hover {
+      background: #0088CC;
+    }
+  }
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.navigation {
+  margin-top: 77px;
+  .logo {
+    >a:nth-child(1) {
+      :hover {
+        color: $footerText;
+      }
+    }
+    >span:nth-child(2) {
+      color: #9B9B9B;
+      font-family: Onest, sans-serif;
+      @include fontSize(16, 12);
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -3.5%;
+      text-align: left;
+      text-transform: lowercase;
+    }
+  }
+  .nav {
+    width: 100%;
+    max-width: 413px;
+    margin: auto 0;
+    a {
+      color: $footerText;
+      div {
+        background: $footerText;
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 57px;
+  }
+}
+
+.form {
+  gap: 22px;
+  width: 100%;
+  form {
+    gap: 10px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.vector {
+  position: absolute;
+  width: 510px;
+  height: 510px;
+  bottom: -405px;
+  left: 280px;
+  transform: rotateZ(69deg);
+  @media (max-width: 768px) {
+    width: 295px;
+    height: 295px;
+    bottom: -230px;
+    right: -105px;
+    transform: rotateZ(357deg);
+    left: unset;
+  }
+}
+.borders {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $borderColor;
+}

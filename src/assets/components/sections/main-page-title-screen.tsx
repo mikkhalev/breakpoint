@@ -1,8 +1,8 @@
 import React from 'react';
 
 // @ts-ignore
-import classes from '../../../css/title-section.module.scss'
-import Button from "../../../UI/button/button";
+import classes from '../../css/sections/main-page-title-screen.module.scss'
+import Button from "../../UI/button/button";
 const MainPageTitleScreen = () => {
     return (
         <section id="title-section">
@@ -57,6 +57,11 @@ const MainPageTitleScreen = () => {
                             Минимальная<br/>стоимость сайта
                         </span>
                     </div>
+                </div>
+                <div className={`${classes.borders}`}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </section>

@@ -1,0 +1,71 @@
+@import "app";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  max-width: 2000px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: $white;
+  z-index: 9999;
+}
+footer {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  max-width: 2000px;
+  margin: 100px auto 0 auto;
+  background: #050505;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    margin: 50px auto 0 auto;
+    padding-bottom: 15px;
+  }
+  .wrapper {
+    position: relative;
+  }
+}
+section {
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+//.section {
+//  margin-top: 101px;
+//  @media (max-width: 768px) {
+//    margin-top: 50px;
+//  }
+//}
+h1,h2,h3,h4,h5,h6{
+  font-family: Unbounded, sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: contain;
+}
+h1 {
+  color: $black;
+  @include fontSize(80, 32);
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 29px;
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

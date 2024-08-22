@@ -1,6 +1,7 @@
 import React from 'react';
 // @ts-ignore
 import classes from "./services-card.module.scss";
+import {Link} from "react-router-dom";
 interface CardConfig {
     href: string,
     number: string,
@@ -12,7 +13,7 @@ interface CardConfig {
 }
 const ServicesCard = ({href, number, icon, iconHover, price, date, title}:CardConfig) => {
     return (
-        <a href={`${href}`} className={`${classes.card} flex-box-column space-between`}>
+        <Link to={`${href}`} className={`${classes.card} flex-box-column space-between`}>
             <div className={`${classes.numberRow} flex-box-row space-between`}>
                 <span>
                    #{number}
@@ -36,7 +37,7 @@ const ServicesCard = ({href, number, icon, iconHover, price, date, title}:CardCo
                     {title}
                 </span>
             </div>
-        </a>
+        </Link>
     );
 };
 

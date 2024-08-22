@@ -1,0 +1,118 @@
+@import "../../css/app";
+
+.step {
+  padding: 28px 20px;
+  border: 1px solid rgb(227, 227, 227);
+  cursor: pointer;
+  transition: 0.6s;
+  height: 82px;
+  margin: -1px 0 0 0;
+  div {
+    gap: 15px;
+    position: relative;
+  }
+  >div{
+    gap: 55px;
+  }
+  .stepNum {
+    color: $greyText;
+    font-family: Onest, sans-serif;
+    @include fontSize(16, 12);
+    font-weight: 400;
+    line-height: 98.52%;
+    letter-spacing: 0;
+    text-align: left;
+    display: block;
+    margin-top: 4px;
+  }
+  .stepTitle {
+    color: $black;
+    font-family: Onest, sans-serif;
+    @include fontSize(24, 16);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .stepInfo {
+    color: $black;
+    font-family: Onest, sans-serif;
+    @include fontSize(14, 10);
+    font-weight: 400;
+    line-height: 98.52%;
+    letter-spacing: 0;
+    text-align: left;
+    opacity: 0;
+    position: absolute;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  img {
+    display: block;
+    height: fit-content;
+    transition: 0.5s;
+  }
+  &:hover {
+    height: 130px;
+    .stepInfo {
+      animation-name: step-info-hover;
+      animation-duration: 1000ms;
+      animation-timing-function: linear;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+    }
+    img {
+      transform: rotateZ(90deg);
+    }
+  }
+  @media (max-width: 1024px) {
+    >div{
+      gap: 25px;
+    }
+    .stepNum {
+      margin-top: 2px;
+    }
+  }
+  @media (max-width: 768px) {
+    height: 45px;
+    padding: 15px 10px;
+    &:hover {
+      height: 95px;
+    }
+    img {
+      height: 15px;
+    }
+    div {
+      gap: 10px;
+    }
+    >div {
+      gap: 15px;
+    }
+  }
+}
+@keyframes step-info-hover{
+  0% {
+    opacity: 0;
+    position: absolute;
+  }
+  50% {
+    opacity: 0;
+    position: unset;
+  }
+  100% {
+    opacity: 1;
+    position: unset;
+  }
+}
+.step:hover .stepInfo {
+  animation-name: step-info-hover;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}

@@ -1,11 +1,19 @@
 import React from 'react';
 // @ts-ignore
-import classes from '../css/logo.module.scss'
-const Logo = () => {
+import classes from './logo.module.scss'
+import {Link} from "react-router-dom";
+
+interface logoCfg {
+    white:boolean
+}
+const Logo = (props:logoCfg) => {
     return (
-        <div className={classes.logo}>
-            the breakpoint.
-        </div>
+        <Link to={"/"}>
+            <span className={`${classes.logo} ${props.white ? classes.white : ''}`}>
+                the breakpoint.
+            </span>
+        </Link>
+
     );
 };
 

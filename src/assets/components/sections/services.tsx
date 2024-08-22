@@ -1,10 +1,10 @@
 import React from 'react';
 // @ts-ignore
-import classes from '../../css/section-two.module.scss'
-import ProductCard from "../../UI/product-card/product-card";
+import classes from '../../css/sections/services.module.scss'
+import ServicesCard from "../services-card/services-card";
 
 
-const Products = () => {
+const Services = () => {
     return (
         <section className="section">
             <div className="wrapper flex-box-column">
@@ -28,8 +28,8 @@ const Products = () => {
                     </div>
                 </div>
                 <div className={`${classes.services} flex-box-row`}>
-                    <ProductCard
-                        href="/"
+                    <ServicesCard
+                        href="/development/"
                         number="1"
                         icon="../../../../images/semicircle.svg"
                         iconHover="../../../../images/card-1-hover.png"
@@ -37,7 +37,7 @@ const Products = () => {
                         date="от 5 дней"
                         title="Разработка сайтов"
                     />
-                    <ProductCard
+                    <ServicesCard
                         href="/"
                         number="2"
                         icon="../../../../images/euler-circles.svg"
@@ -46,7 +46,7 @@ const Products = () => {
                         date="от 1 часа"
                         title="обслужива–ние сайтов"
                     />
-                    <ProductCard
+                    <ServicesCard
                         href="/"
                         number="3"
                         icon="../../../../images/semicircle-2.svg"
@@ -55,7 +55,7 @@ const Products = () => {
                         date="от 10 дней"
                         title="Дизайн"
                     />
-                    <ProductCard
+                    <ServicesCard
                         href="/"
                         number="4"
                         icon="../../../../images/ovals.svg"
@@ -65,10 +65,12 @@ const Products = () => {
                         title="Апгрейт сайтов"
                     />
                 </div>
-            </div>
+                <div className={`${classes.borders}`}>
 
+                </div>
+            </div>
         </section>
     );
 };
 
-export default Products;
+export default Services;
