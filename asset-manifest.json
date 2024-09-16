@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/breakpoint/static/css/main.a9357d63.css",
+    "main.js": "/breakpoint/static/js/main.88ecfe58.js",
+    "index.html": "/breakpoint/index.html",
+    "main.a9357d63.css.map": "/breakpoint/static/css/main.a9357d63.css.map",
+    "main.88ecfe58.js.map": "/breakpoint/static/js/main.88ecfe58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9357d63.css",
+    "static/js/main.88ecfe58.js"
+  ]
+}
