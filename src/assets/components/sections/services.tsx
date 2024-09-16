@@ -31,8 +31,8 @@ const Services = () => {
                     <ServicesCard
                         href="/development/"
                         number="1"
-                        icon="../../../../images/semicircle.svg"
-                        iconHover="../../../../images/card-1-hover.png"
+                        icon={`${process.env.PUBLIC_URL}/images/semicircle.svg`}
+                        iconHover={`${process.env.PUBLIC_URL}/images/card-1-hover.png`}
                         price="20 000"
                         date="от 5 дней"
                         title="Разработка сайтов"
@@ -40,8 +40,8 @@ const Services = () => {
                     <ServicesCard
                         href="/"
                         number="2"
-                        icon="../../../../images/euler-circles.svg"
-                        iconHover="../../../../images/card-2-hover.png"
+                        icon={`${process.env.PUBLIC_URL}/images/euler-circles.svg`}
+                        iconHover={`${process.env.PUBLIC_URL}/images/card-2-hover.png`}
                         price="800"
                         date="от 1 часа"
                         title="обслужива–ние сайтов"
@@ -49,8 +49,8 @@ const Services = () => {
                     <ServicesCard
                         href="/"
                         number="3"
-                        icon="../../../../images/semicircle-2.svg"
-                        iconHover="../../../../images/card-3-hover.png"
+                        icon={`${process.env.PUBLIC_URL}/images/semicircle-2.svg`}
+                        iconHover={`${process.env.PUBLIC_URL}/images/card-3-hover.png`}
                         price="15 000"
                         date="от 10 дней"
                         title="Дизайн"
@@ -58,8 +58,8 @@ const Services = () => {
                     <ServicesCard
                         href="/"
                         number="4"
-                        icon="../../../../images/ovals.svg"
-                        iconHover="../../../../images/card-4-hover.png"
+                        icon={`${process.env.PUBLIC_URL}/images/ovals.svg`}
+                        iconHover={`${process.env.PUBLIC_URL}/images/card-4-hover.png`}
                         price="10 000"
                         date="от 5 дней"
                         title="Апгрейт сайтов"

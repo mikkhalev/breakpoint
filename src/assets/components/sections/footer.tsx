@@ -48,7 +48,7 @@ const Footer = () => {
                         <Navigation/>
                     </div>
                 </div>
-                <img className={classes.vector} src="../../../../images/vector-circle-dark.svg" alt={""}/>
+                <img className={classes.vector} src={`${process.env.PUBLIC_URL}/images/vector-circle-dark.svg`} alt={""}/>
                 <div className={`${classes.borders}`}>
 
                 </div>

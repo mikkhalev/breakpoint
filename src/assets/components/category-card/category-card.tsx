@@ -32,7 +32,7 @@ const CategoryCard = ({title, text, price}:category) => {
                         <span>
                             Оставить заявку
                         </span>
-                        <img src={'../../../../images/arrow-r.svg'} alt={''}/>
+                        <img src={`${process.env.PUBLIC_URL}/images/arrow-r.svg`} alt={''}/>
                     </a>
                 </div>
             </div>

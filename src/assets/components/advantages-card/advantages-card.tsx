@@ -21,7 +21,7 @@ const AdvantagesCard = ({num, title, text}:CardCfg) => {
                     {text}
                 </span>
             </div>
-            <img src={'../../../../images/vector-circle.svg'} alt={''}/>
+            <img src={`${process.env.PUBLIC_URL}/images/vector-circle.svg`} alt={''}/>
         </div>
     );
 };

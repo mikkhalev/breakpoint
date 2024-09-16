@@ -8,7 +8,7 @@ const Development = () => {
             <ServicesPageTitleScreen
                 title='Разработка продающих сайтов'
                 bid="/"
-                img="../../../../images/development.svg"
+                img={`${process.env.PUBLIC_URL}/images/development.svg`}
             />
             <Category
                 title={['стильные и удобные сайты ', 'для решения бизнес-задач']}

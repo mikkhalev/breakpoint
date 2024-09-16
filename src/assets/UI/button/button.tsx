@@ -25,7 +25,7 @@ const Button = ({color, isArrow, title}:BtnConfig) => {
                     {title}
                 </span>
                 {
-                    isArrow ? <img src={'../../../../images/arrow-r.svg'} alt="Arrow right"/> : ''
+                    isArrow ? <img src={`${process.env.PUBLIC_URL}/images/arrow-r.svg`} alt=""/> : ''
                 }
             </div>
         </button>

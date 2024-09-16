@@ -18,7 +18,7 @@ const ServicesCard = ({href, number, icon, iconHover, price, date, title}:CardCo
                 <span>
                    #{number}
                 </span>
-                <img src={'../../../../images/link-arrow.svg'} alt={'Ссылка'}/>
+                <img src={`${process.env.PUBLIC_URL}/images/link-arrow.svg`} alt={'Ссылка'}/>
             </div>
             <div className={classes.cardImages}>
                 <img className={`${classes.cardImageDefault}`} src={`${icon}`} alt={''}/>

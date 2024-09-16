@@ -18,9 +18,9 @@ const ServicesPageTitleScreen = ({title, bid, img}:section) => {
                     Заполнить бриф
                 </a>
                 <img className={classes.icon} src={img} alt={''}/>
-                <img className={classes.vector1} src={'../../../../images/vector-circle.svg'} alt={''}/>
-                <img className={classes.vector2} src={'../../../../images/vector-circle.svg'} alt={''}/>
-                <img className={classes.vector3} src={'../../../../images/vector-circle.svg'} alt={''}/>
+                <img className={classes.vector1} src={`${process.env.PUBLIC_URL}/images/vector-circle.svg`} alt={''}/>
+                <img className={classes.vector2} src={`${process.env.PUBLIC_URL}/images/vector-circle.svg`} alt={''}/>
+                <img className={classes.vector3} src={`${process.env.PUBLIC_URL}/images/vector-circle.svg`} alt={''}/>
             </div>
             <div className={`${classes.borders}`}>
                 <div></div>

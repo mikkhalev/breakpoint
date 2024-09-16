@@ -9,8 +9,8 @@ const AppRouter = () => {
         <Routes>
             <Route path={'/development/'} element={<Development/>}/>
             <Route path={'/'} element={<MainPage/>}/>
-            <Route path={'404'} element={<NotFound404/>}/>
-            <Route path={'*'} element={<NotFound404/>}/>
+            {/*{<Route path={'404'} element={<NotFound404/>}/>}*/}
+            <Route path={'*'} element={<MainPage/>}/>
         </Routes>
     );
 };

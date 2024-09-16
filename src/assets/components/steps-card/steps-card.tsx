@@ -22,7 +22,7 @@ const StepsCard = ({num, title, text}:stepCfg) => {
                     </span>
                 </div>
             </div>
-            <img src={'../../../../images/link-arrow.svg'} alt={'Подробнее'}/>
+            <img src={`${process.env.PUBLIC_URL}/images/link-arrow.svg`} alt={'Подробнее'}/>
         </div>
     );
 };
